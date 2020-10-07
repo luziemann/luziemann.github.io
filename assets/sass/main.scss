@@ -29,8 +29,6 @@
 		}
 	}
 
-	$delay-wrapper:			_duration(wrapper) - 1s;
-	$delay-overlay:			$delay-wrapper - 0.5s;
 	$delay-header:			$delay-overlay + _duration(overlay) - 0.75s;
 	$delay-nav-icons:		$delay-header + _duration(header) - 1s;
 	$delay-nav-icon:		0.25s;
@@ -176,38 +174,18 @@
 		}
 	}
 
-/* Wrapper */
-
-	@include keyframes('wrapper') {
-		0%		{ opacity: 0; }
-		100%	{ opacity: 1; }
-	}
-
-	#wrapper {
-		@include vendor('animation', 'wrapper #{_duration(wrapper)} forwards');
-		height: 100%;
-		left: 0;
-		opacity: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
-
 /* BG */
 
 	#bg {
 		/* Set your background with this */
 		background: _misc('images/bg.jpg');
 
-		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
 		opacity: 1;
 		position: fixed;
 		top: 0;
 	}
-
-	@include bg(_misc(bg-width) * 1.5);
 
 /* Main */
 
