@@ -201,7 +201,7 @@
 		@include vendor('transform', 'translate3d(0,0,0)');
 
 		/* Set your background with this */
-		background: _misc(assets/css/images/ie/bg.jpg);
+		background: _misc('images/bg.jpg');
 
 		background-repeat: repeat-x;
 		height: 100%;
